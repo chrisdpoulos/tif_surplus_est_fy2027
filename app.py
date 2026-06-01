@@ -31,8 +31,6 @@ def main():
     if df is None or df2 is None:
         return
 
-    st.dataframe(df)
-
     # Main app
     
     st.set_page_config(page_title="TIF Surplus Estimates FY2027", layout="centered")
