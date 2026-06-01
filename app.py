@@ -120,7 +120,7 @@ def main():
             hide_index=True
         )
 
-    st.header("TIF Surplus Estimates for 2025 by District")
+    st.header("TIF Surplus Estimates for 2026 by District")
 
 # Create a filter to select by TIF district default
 
@@ -131,11 +131,11 @@ def main():
     filtered_df = df[(df['tif_name_comptroller_report'] == selected_district)]
 
     # Create a table where rows are unallocated funds, City Surplus Method, Declared surplus (IL Comptroller data), and CTU methods 1,2, and 3
-    unallocated = filtered_df['unallocated_funds_2025'].values[0]
-#     surplus_city = filtered_df['surplus_2025'].values[0]
-#     ctu_method1 = filtered_df['full_surplus_avg_method_25'].values[0]
-#     ctu_method2 = filtered_df['full_surplus_poly_method_25'].values[0]
-#     ctu_method3 = filtered_df['full_surplus_weighted_method_25'].values[0]
+    unallocated = filtered_df['unallocated_funds_2026'].values[0]
+#     surplus_city = filtered_df['surplus_2026'].values[0]
+#     ctu_method1 = filtered_df['full_surplus_avg_method_26'].values[0]
+#     ctu_method2 = filtered_df['full_surplus_poly_method_26'].values[0]
+#     ctu_method3 = filtered_df['full_surplus_weighted_method_26'].values[0]
     
     unallocated_cps = unallocated * cps
 #     surplus_city_cps = surplus_city * cps
